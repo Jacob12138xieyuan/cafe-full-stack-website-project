@@ -80,3 +80,18 @@ INSERT INTO "employees" ("employee_id","name","gender","email","phone","join_dat
  ('UI6160602','Nobody','Male','nobody@gmail.com','99988898','2023-09-06',''),
  ('UI3915603','Sally1','Female','sally-34324@email.com','94736779','2023-08-23','fcb55957-74c0-4910-9b7a-cb776d8343e9');
 ```
+
+## Run full-stack app in Docker
+1. Install docker desktop
+   Run ```docker version``` to verify installation
+
+2. Build and run the Docker containers.
+Navigate to the root directory of your project (where the docker-compose.yml file is located).
+Run the following command to build and run the Docker containers:
+```docker-compose up --build```
+Docker Compose will read the docker-compose.yml file, build the Docker images based on the Dockerfiles, and create and start the containers.
+You should see the output from the frontend and backend containers in the terminal.
+
+3. Access the applications.
+The React frontend should be accessible at http://localhost:3000.
+The Node.js backend should be accessible at http://localhost:5000.
