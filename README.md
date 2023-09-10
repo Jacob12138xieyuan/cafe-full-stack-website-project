@@ -12,6 +12,9 @@ It mainly has four pages.
 3.5. /employees?cafe_id=<cafe_id>: It filter employee by cafe_id 
 4. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
 
+If first time running, run
+`npm install` in /frontend folder to install packages
+
 Start frontend server by running
 `npm start` in /frontend folder
 
@@ -19,8 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Backend
 It is written in Nodejs (Expressjs), SQLite. It implements RESTful API for the frontend.
-1. employees. GET /employees, GET /employees?cafe=<cafe_name>, POST /employees, PUT /employees, DELETE /employees
-2. cafes. GET /cafes, GET /cafes?location=<location>, POST /cafes, PUT /cafes, DELETE /cafes
+1. employees: GET /employees, GET /employees?cafe=<cafe_name>, POST /employees, PUT /employees, DELETE /employees
+2. cafes: GET /cafes, GET /cafes?location=<location>, POST /cafes, PUT /cafes, DELETE /cafes
+
+If first time running, run
+`npm install` in /frontend folder to install packages
 
 Start backend server by running
 `npm start` in /backend folder
