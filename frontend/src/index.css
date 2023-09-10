@@ -1,0 +1,17 @@
+.table-container {
+  display: "flex";
+  justify-content: "center";
+}
+
+#toolbar-logo {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.main {
+  background-color: #f7eee4;
+}
+
+.with-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
