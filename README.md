@@ -82,10 +82,12 @@ INSERT INTO "employees" ("employee_id","name","gender","email","phone","join_dat
 ```
 
 ## Run full-stack app in Docker
-1. Install docker desktop
-   Run ```docker version``` to verify installation
+1. Install docker desktop.
+   
+Run ```docker version``` to verify installation
 
 2. Build and run the Docker containers.
+   
 Navigate to the root directory of your project (where the docker-compose.yml file is located).
 Run the following command to build and run the Docker containers:
 ```docker-compose up --build```
