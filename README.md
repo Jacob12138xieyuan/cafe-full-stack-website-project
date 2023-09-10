@@ -1,6 +1,6 @@
 # Getting Started with Full Stack Practice Project
 
-It is Fantastic Cafe website
+It is Fantastic Cafe website. It is implemented based on requirement.docx
 
 ## Download Code
 Run 
@@ -17,10 +17,10 @@ It mainly has four pages.
 4. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
 
 If first time running, run
-`npm install` in /frontend folder to install packages
+```npm install``` in /frontend folder to install packages
 
 Start frontend server by running
-`npm start` in /frontend folder
+```npm start``` in /frontend folder
 
 Open [http://localhost:3000](http://localhost:3000) (automatically) to view UI in your browser.
 
@@ -30,10 +30,10 @@ It is written in Nodejs (Expressjs), SQLite. It implements RESTful API for the f
 2. cafes: GET /cafes, GET /cafes?location=<location>, POST /cafes, PUT /cafes, DELETE /cafes
 
 If first time running, run
-`npm install` in /frontend folder to install packages
+```npm install``` in /frontend folder to install packages
 
 Start backend server by running
-`npm start` in /backend folder
+```npm start``` in /backend folder
 
 BaseURL: [http://localhost:5000](http://localhost:5000) to test APIs it in your browser.
 
