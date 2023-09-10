@@ -8,13 +8,16 @@ Run
 in Git Bash to download all files.
    
 ## Frontend
+
 It is written in react, redux-toolkit for state management, material UI as CSS framework, agGrid as table component.
 It mainly has four pages.
 1. /cafes: It renders all available cafes in a table. A button to add new cafe.
+   ![docker-compose](./images/cafes.png)
 2. /edit-cafe: It renders a form for user to create/edit a cafe information with basic validation.
 3. /employees: It renders all employees working in cafes in a table. A button to add new employee.
+   ![docker-compose](./images/employees.png)
 /employees?cafe_id=<cafe_id>: It filter employee by cafe_id 
-4. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
+1. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
 
 If first time running, run
 ```npm install``` in /frontend folder to install packages
@@ -81,7 +84,7 @@ INSERT INTO "employees" ("employee_id","name","gender","email","phone","join_dat
  ('UI3915603','Sally1','Female','sally-34324@email.com','94736779','2023-08-23','fcb55957-74c0-4910-9b7a-cb776d8343e9');
 ```
 
-## Run full-stack app in Docker
+## Run full-stack app in Docker (alternative)
 1. Install docker desktop.
    
 Run ```docker version``` to verify installation
@@ -93,7 +96,9 @@ Run the following command to build and run the Docker containers:
 ```docker-compose up --build```
 Docker Compose will read the docker-compose.yml file, build the Docker images based on the Dockerfiles, and create and start the containers.
 You should see the output from the frontend and backend containers in the terminal.
+![docker-compose](./images/docker-compose.png)
 
 3. Access the applications.
+   
 The React frontend should be accessible at http://localhost:3000.
 The Node.js backend should be accessible at http://localhost:5000.
