@@ -14,10 +14,11 @@ It mainly has four pages.
 1. /cafes: It renders all available cafes in a table. A button to add new cafe.
    ![docker-compose](./images/cafes.png)
 2. /edit-cafe: It renders a form for user to create/edit a cafe information with basic validation.
+   ![docker-compose](./images/edit-cafe.png)
 3. /employees: It renders all employees working in cafes in a table. A button to add new employee.
-   ![docker-compose](./images/employees.png)
-/employees?cafe_id=<cafe_id>: It filter employee by cafe_id 
-1. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
+   ![docker-compose](./images/employees.png)(/employees?cafe_id=<cafe_id>: It filter employee by cafe_id) 
+4. /edit-employee: It renders a form for user to create/edit an employee information with basic validation.
+   ![docker-compose](./images/edit-employee.png)
 
 If first time running, run
 ```npm install``` in /frontend folder to install packages
@@ -29,16 +30,16 @@ Open [http://localhost:3000](http://localhost:3000) (automatically) to view UI i
 
 ## Backend
 It is written in Nodejs (Expressjs), SQLite. It implements RESTful API for the frontend.
-1. employees: GET /employees, GET /employees?cafe=<cafe_name>, POST /employees, PUT /employees, DELETE /employees
-2. cafes: GET /cafes, GET /cafes?location=<location>, POST /cafes, PUT /cafes, DELETE /cafes
+1. employees: GET /employees, GET /employees?cafe=<cafe_name>, POST /employees, PUT /employees, DELETE /employees:id
+2. cafes: GET /cafes, GET /cafes?location=<location>, POST /cafes, PUT /cafes, DELETE /cafes:id
 
 If first time running, run
-```npm install``` in /frontend folder to install packages
+```npm install``` in /backend folder to install packages
 
 Start backend server by running
 ```npm start``` in /backend folder
 
-BaseURL: [http://localhost:5000](http://localhost:5000) to test APIs it in your browser.
+BaseURL: [http://localhost:5000](http://localhost:5000) to test APIs it in your browser or postman.
 
 ## SQLite Database
 Data is stored in /backend/db/cafe_project.db file. 
